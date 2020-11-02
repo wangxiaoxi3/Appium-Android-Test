@@ -1,0 +1,231 @@
+{
+  "features" : [ {
+    "title" : "Home",
+    "statistic" : {
+      "total" : 3,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 3,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "f55f53cfb39518e7",
+      "title" : "discover",
+      "statistic" : {
+        "total" : 2,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 2,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "7058af3adcdbeae9",
+        "name" : "test_discover.TestDiscover.test_discover_not_null",
+        "title" : "Test discover not null",
+        "time" : {
+          "start" : 1545056831043,
+          "stop" : 1545056831045,
+          "duration" : 2
+        },
+        "severity" : "NORMAL",
+        "status" : "CANCELED"
+      }, {
+        "uid" : "b533d12542ab9961",
+        "name" : "test_discover.TestDiscover.test_play_discover_album",
+        "title" : "Test play discover album",
+        "time" : {
+          "start" : 1545056831048,
+          "stop" : 1545056831050,
+          "duration" : 2
+        },
+        "severity" : "NORMAL",
+        "status" : "CANCELED"
+      } ]
+    }, {
+      "uid" : "d77412fd003a85d6",
+      "title" : "profile",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 1,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "bb5df19ccc1a3913",
+        "name" : "test_profile.TestProfile.test_avatar_to_profile_page",
+        "title" : "Test avatar to profile page",
+        "time" : {
+          "start" : 1545056831056,
+          "stop" : 1545056831058,
+          "duration" : 2
+        },
+        "severity" : "NORMAL",
+        "status" : "CANCELED"
+      } ]
+    } ]
+  }, {
+    "title" : "Home1",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 1,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "c9335934161fb60c",
+      "title" : "genres",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 1,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "f1cf11af094a8fa7",
+        "name" : "test_discover.TestDiscover.test_play_genres_album",
+        "title" : "Test play genres album",
+        "time" : {
+          "start" : 1545056831052,
+          "stop" : 1545056831054,
+          "duration" : 2
+        },
+        "severity" : "NORMAL",
+        "status" : "CANCELED"
+      } ]
+    } ]
+  }, {
+    "title" : "Login",
+    "statistic" : {
+      "total" : 5,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 5,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "90554f8bc60827ab",
+      "title" : "facebook",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 1,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "517c6b7a31a432d8",
+        "name" : "test_login.TestLogin.test_fb_login",
+        "title" : "Test fb login",
+        "time" : {
+          "start" : 1545056831059,
+          "stop" : 1545056831061,
+          "duration" : 2
+        },
+        "severity" : "BLOCKER",
+        "status" : "CANCELED"
+      } ]
+    }, {
+      "uid" : "13140378f81379cf",
+      "title" : "google",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 1,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "9012438333bc69f9",
+        "name" : "test_login.TestLogin.test_google_login",
+        "title" : "Test google login",
+        "time" : {
+          "start" : 1545056831066,
+          "stop" : 1545056831069,
+          "duration" : 3
+        },
+        "severity" : "BLOCKER",
+        "status" : "CANCELED"
+      } ]
+    }, {
+      "uid" : "58381eb2b0e356b3",
+      "title" : "twitter",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 1,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "d0645545e3092d16",
+        "name" : "test_login.TestLogin.test_twitter_login",
+        "title" : "Test twitter login",
+        "time" : {
+          "start" : 1545056831072,
+          "stop" : 1545056831075,
+          "duration" : 3
+        },
+        "severity" : "BLOCKER",
+        "status" : "CANCELED"
+      } ]
+    }, {
+      "uid" : "a6dc1f640b79e8f7",
+      "title" : "login_email",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 1,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "b38505fe337120c2",
+        "name" : "test_login.TestLogin.test_login_email",
+        "title" : "Test login email",
+        "time" : {
+          "start" : 1545056831076,
+          "stop" : 1545056831077,
+          "duration" : 1
+        },
+        "severity" : "BLOCKER",
+        "status" : "CANCELED"
+      } ]
+    }, {
+      "uid" : "6ef6168c14e926b2",
+      "title" : "login_later",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 1,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "83809604efda7c9b",
+        "name" : "test_login.TestLogin.test_login_later",
+        "title" : "Test login later",
+        "time" : {
+          "start" : 1545056831078,
+          "stop" : 1545056831079,
+          "duration" : 1
+        },
+        "severity" : "BLOCKER",
+        "status" : "CANCELED"
+      } ]
+    } ]
+  } ]
+}

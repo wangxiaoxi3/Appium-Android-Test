@@ -1,0 +1,74 @@
+---
+MainPage:
+  dec: 主界面
+  locators:
+    -
+      name: discover_album_name
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_double_list_book_name
+
+    -
+      name: search
+      type: id
+      value: com.papayamobile.fm.pre:id/action_search
+
+    -
+      name: genres
+      type: name
+      value: Genres
+
+    -
+      name: genres_list
+      type: name
+      value: Culture & Heritage
+
+    -
+      name: genres_list_album_name
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_double_list_book_name
+
+    -
+      name: my_library
+      type: name
+      value: My library
+
+    -
+      name: recents
+      type: name
+      value: Recents
+
+    -
+      name: download
+      type: name
+      value: Downloads
+
+    -
+      name: nav_drawer
+      type: xpath
+      value: //android.widget.ImageButton[@content-desc="Open navigation drawer"]
+
+    -
+      name: login
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_login_with_account
+
+    -
+      name: close
+      type: id
+      value: com.papayamobile.fm.pre:id/image_view_close
+
+    -
+      name: close_offer
+      type: xpath
+      value: //*[@resource-id="com.papayamobile.fm.pre:id/image_view_help_center_close"]
+
+    -
+      name: select_all
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_select_all
+
+    -
+      name: continue_bn
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_continue
+

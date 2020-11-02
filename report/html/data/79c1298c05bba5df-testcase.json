@@ -1,0 +1,62 @@
+{
+  "uid" : "79c1298c05bba5df",
+  "name" : "test_discover.TestDiscover.test_play_genres_album",
+  "title" : "Test play genres album",
+  "time" : {
+    "start" : 1544153317483,
+    "stop" : 1544153317486,
+    "duration" : 3
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n        验证genres内专辑可播放\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "6db617bd319da521",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "story",
+    "value" : "genres"
+  }, {
+    "name" : "thread",
+    "value" : "4236-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "feature",
+    "value" : "Home1"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,62 @@
+{
+  "uid" : "2fde227293403065",
+  "name" : "test_login.TestLogin.test_google_login",
+  "title" : "Test google login",
+  "time" : {
+    "start" : 1542262696811,
+    "stop" : 1542262696816,
+    "duration" : 5
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'Home1').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n        Google登陆验证\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "cb6475e09a6df581",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "google"
+  }, {
+    "name" : "thread",
+    "value" : "45956-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

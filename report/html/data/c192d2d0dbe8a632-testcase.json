@@ -1,0 +1,59 @@
+{
+  "uid" : "c192d2d0dbe8a632",
+  "name" : "test_login.TestLogin.test_login_later",
+  "title" : "Test login later",
+  "time" : {
+    "start" : 1544150089177,
+    "stop" : 1544150191138,
+    "duration" : 101961
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n        login later 登陆验证\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "64ffd1142170fd54",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "1654-MainThread"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "story",
+    "value" : "login_later"
+  } ],
+  "parameters" : [ ]
+}

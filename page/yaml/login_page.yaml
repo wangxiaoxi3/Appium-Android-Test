@@ -1,0 +1,41 @@
+---
+LoginPage:
+  dec: 登录页面
+  locators:
+    -
+      name: fb
+      type: id
+      value: com.papayamobile.fm.pre:id/button_facebook
+    -
+      name: google
+      type: id
+      value: com.papayamobile.fm.pre:id/button_google
+    -
+      name: google_choose
+      type: id
+      value: com.google.android.gms:id/account_name
+    -
+      name: twitter
+      type: id
+      value: com.papayamobile.fm.pre:id/button_twitter
+
+    -
+      name: twitter_choose
+      type: id
+      value: com.twitter.android:id/ok_button
+    -
+      name: login_later
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_login_later
+    -
+      name: login_mail
+      type: id
+      value: com.papayamobile.fm.pre:id/edit_text_email
+    -
+      name: login_password
+      type: id
+      value: com.papayamobile.fm.pre:id/edit_text_password
+    -
+      name: login_button
+      type: id
+      value: com.papayamobile.fm.pre:id/button_login

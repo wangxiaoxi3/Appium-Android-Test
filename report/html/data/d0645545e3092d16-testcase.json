@@ -1,0 +1,62 @@
+{
+  "uid" : "d0645545e3092d16",
+  "name" : "test_login.TestLogin.test_twitter_login",
+  "title" : "Test twitter login",
+  "time" : {
+    "start" : 1545056831072,
+    "stop" : 1545056831075,
+    "duration" : 3
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'My stdio1').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n        twitter登陆验证\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "158f5e4469aca0ad",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "twitter"
+  }, {
+    "name" : "thread",
+    "value" : "6847-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.107"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

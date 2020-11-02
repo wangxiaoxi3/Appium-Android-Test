@@ -1,0 +1,74 @@
+{
+  "uid" : "b18057105345861e",
+  "name" : "test_profile.TestProfile.test_avatar_to_profile_page",
+  "title" : "Test avatar to profile page",
+  "time" : {
+    "start" : 1544067681937,
+    "stop" : 1544067726874,
+    "duration" : 44937
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n        验证profile页面\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "c44bb6415c36af24",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ {
+    "name" : "不登录",
+    "title" : "不登录",
+    "time" : {
+      "start" : 1544067702293,
+      "stop" : 1544067720309,
+      "duration" : 18016
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "92752-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "story",
+    "value" : "profile"
+  } ],
+  "parameters" : [ ]
+}

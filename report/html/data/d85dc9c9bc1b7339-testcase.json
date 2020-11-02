@@ -1,0 +1,62 @@
+{
+  "uid" : "d85dc9c9bc1b7339",
+  "name" : "test_discover.TestDiscover.test_play_discover_album",
+  "title" : "Test play discover album",
+  "time" : {
+    "start" : 1542264403191,
+    "stop" : 1542264403192,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'Home1').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n        验证weekly_selections内专辑可播放\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "e44f374a0e7b19e0",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "discover"
+  }, {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "47549-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

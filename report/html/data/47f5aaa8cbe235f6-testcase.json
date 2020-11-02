@@ -1,0 +1,62 @@
+{
+  "uid" : "47f5aaa8cbe235f6",
+  "name" : "test_record.TestRecord.test_record_start",
+  "title" : "Test record start",
+  "time" : {
+    "start" : 1544151326961,
+    "stop" : 1544151326962,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'My stdio1').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n        验证录音功能\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "e268e3ce851d24e8",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "3126-MainThread"
+  }, {
+    "name" : "feature",
+    "value" : "My stdio"
+  }, {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "story",
+    "value" : "record"
+  } ],
+  "parameters" : [ ]
+}

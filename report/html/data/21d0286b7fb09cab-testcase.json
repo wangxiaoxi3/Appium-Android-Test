@@ -1,0 +1,62 @@
+{
+  "uid" : "21d0286b7fb09cab",
+  "name" : "test_profile.TestProfile.test_avatar_to_profile_page",
+  "title" : "Test avatar to profile page",
+  "time" : {
+    "start" : 1543844467630,
+    "stop" : 1543844467634,
+    "duration" : 4
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'Home1').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n        验证profile页面\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "b602b8351caa58ed",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "77334-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.107"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "story",
+    "value" : "profile"
+  } ],
+  "parameters" : [ ]
+}

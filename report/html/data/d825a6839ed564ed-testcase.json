@@ -1,0 +1,74 @@
+{
+  "uid" : "d825a6839ed564ed",
+  "name" : "test_discover.TestDiscover.test_play_genres_album",
+  "title" : "Test play genres album",
+  "time" : {
+    "start" : 1542264544165,
+    "stop" : 1542264679170,
+    "duration" : 135005
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n        验证genres内专辑可播放\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "3b1700761f4ff911",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ {
+    "name" : "不登录",
+    "title" : "不登录",
+    "time" : {
+      "start" : 1542264592820,
+      "stop" : 1542264608108,
+      "duration" : 15288
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "47731-MainThread"
+  }, {
+    "name" : "story",
+    "value" : "genres"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "feature",
+    "value" : "Home1"
+  } ],
+  "parameters" : [ ]
+}

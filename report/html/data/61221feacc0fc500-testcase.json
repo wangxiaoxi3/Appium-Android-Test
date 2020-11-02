@@ -1,0 +1,62 @@
+{
+  "uid" : "61221feacc0fc500",
+  "name" : "test_creat_album.TestCreateAlbum.test_creat_album",
+  "title" : "Test creat album",
+  "time" : {
+    "start" : 1542262613604,
+    "stop" : 1542262613609,
+    "duration" : 5
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'Home1').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n        创建专辑验证\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "cb6475e09a6df581",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "My stdio"
+  }, {
+    "name" : "thread",
+    "value" : "45956-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "story",
+    "value" : "creat album"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

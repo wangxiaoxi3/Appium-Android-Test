@@ -1,0 +1,13 @@
+---
+SearchPage:
+  dec: 搜索页
+  locators:
+    -
+      name: search_name
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_album_name
+
+    -
+      name: chapter_name
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_chapter_name

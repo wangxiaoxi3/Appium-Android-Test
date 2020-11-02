@@ -1,0 +1,28 @@
+---
+ToolPage:
+  dec: 侧边栏
+  locators:
+    -
+      name: user_name
+      type: id
+      value: com.papayamobile.fm:id/text_view_username
+
+    -
+      name: title
+      type: id
+      value: com.papayamobile.fm:id/title
+
+    -
+      name: login_btn
+      type: id
+      value: com.papayamobile.fm:id/text_view_login_with_account
+
+    -
+      name: record
+      type: id
+      value: com.papayamobile.fm.pre:id/image_button_record
+
+    -
+      name: studio
+      type: id
+      value: com.papayamobile.fm.pre:id/image_view_my_recording

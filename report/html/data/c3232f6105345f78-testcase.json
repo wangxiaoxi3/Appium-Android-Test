@@ -1,0 +1,41 @@
+{
+  "uid" : "c3232f6105345f78",
+  "name" : "test_record",
+  "title" : "Test record",
+  "time" : {
+    "start" : 1542166448777,
+    "stop" : 1542166448777,
+    "duration" : 0
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "failed",
+    "stackTrace" : "ImportError while importing test module '/Users/wangjuan/workpace/appium-fm/test/test_record.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\ntest/test_record.py:11: in <module>\n    from utils import L, find_new_screenshot\nE   ImportError: cannot import name 'find_new_screenshot'"
+  },
+  "description" : {
+    "value" : "This is the tests collection phase. Failures are modules that failed to collect.",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "BROKEN",
+  "testId" : null,
+  "suite" : {
+    "uid" : "4cc5a8019f7017ca",
+    "name" : "test_collection_phase",
+    "title" : "Collection phase"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "Collection phase"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_collection_phase"
+  } ],
+  "parameters" : [ ]
+}

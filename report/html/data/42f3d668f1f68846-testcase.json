@@ -1,0 +1,68 @@
+{
+  "uid" : "42f3d668f1f68846",
+  "name" : "test_login.TestLogin.test_login_email",
+  "title" : "Test login email",
+  "time" : {
+    "start" : 1544149861055,
+    "stop" : 1544150085972,
+    "duration" : 224917
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "NotFoundElementError: ",
+    "stackTrace" : "self = <base.actions.ElementActions object at 0x10e9918d0>\nlocator = {'name': 'login', 'type': 'id', 'value': 'com.papayamobile.fm.pre:id/text_view_login_with_account'}\nis_need_displayed = True\n\n    def _find_element(self, locator, is_need_displayed=True):\n        \"\"\"查找单个元素,如果有多个返回第一个\n    \n        Args:\n            locator: 定位器\n            is_need_displayed: 是否需要定位的元素必须展示\n    \n        Returns: 元素\n    \n        Raises: NotFoundElementError\n                未找到元素会抛 NotFoundElementError 异常\n    \n        \"\"\"\n        if 'timeOutInSeconds' in locator:\n            wait = locator['timeOutInSeconds']\n        else:\n            wait = 20\n    \n        try:\n            if is_need_displayed:\n                WebDriverWait(self.driver, wait).until(\n>                   lambda driver: self._get_element_by_type(driver, locator).is_displayed())\n\nbase/actions.py:339: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"0474d9ee-657d-484c-863f-432ee3544b8a\")>\nmethod = <function ElementActions._find_element.<locals>.<lambda> at 0x10f23d8c8>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/selenium/webdriver/support/wait.py:80: TimeoutException\n\nDuring handling of the above exception, another exception occurred:\n\nself = <test.test_login.TestLogin object at 0x10f204748>\naction = <base.actions.ElementActions object at 0x10e9918d0>\n\n    @pytest.allure.feature('Login')\n    @allure.story('login_email')\n    @allure.severity('blocker')\n    @pytest.mark.flaky(reruns=2, reruns_delay=5)\n    def test_login_email(self, action: ElementActions):\n        \"\"\"\n        login email 登陆验证\n    \n        \"\"\"\n        L.d('test_login_email')\n        # 选择\n        action.click(MainPage.select_all)\n        # action.click(MainPage.continue_bn)\n        # action.sleep(2)\n        # if action.is_text_displayed(u'允许') is True:\n        #     action.alert()\n        # else:\n        #     pass\n        # 关闭广告\n        action.sleep(2)\n        action.back_press()\n        action.sleep(2)\n        action.click(MainPage.nav_drawer)\n>       action.click(MainPage.login)\n\ntest/test_login.py:162: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/actions.py:98: in click\n    el = self._find_element(locator)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <base.actions.ElementActions object at 0x10e9918d0>\nlocator = {'name': 'login', 'type': 'id', 'value': 'com.papayamobile.fm.pre:id/text_view_login_with_account'}\nis_need_displayed = True\n\n    def _find_element(self, locator, is_need_displayed=True):\n        \"\"\"查找单个元素,如果有多个返回第一个\n    \n        Args:\n            locator: 定位器\n            is_need_displayed: 是否需要定位的元素必须展示\n    \n        Returns: 元素\n    \n        Raises: NotFoundElementError\n                未找到元素会抛 NotFoundElementError 异常\n    \n        \"\"\"\n        if 'timeOutInSeconds' in locator:\n            wait = locator['timeOutInSeconds']\n        else:\n            wait = 20\n    \n        try:\n            if is_need_displayed:\n                WebDriverWait(self.driver, wait).until(\n                    lambda driver: self._get_element_by_type(driver, locator).is_displayed())\n            else:\n                WebDriverWait(self.driver, wait).until(\n                    lambda driver: self._get_element_by_type(driver, locator) is not None)\n            return self._get_element_by_type(self.driver, locator)\n        except Exception as e:\n            L.e(\"[element] 页面中未能找到 %s 元素\" % locator)\n            filename = locator['name']\n            self.screenshot('no_element_%s' % filename)\n            file = tools.Find.find_screen('no_element_%s' % filename)\n            allure.attach('no_element_%s.png' % filename, file, allure.attach_type.PNG)\n>           raise NotFoundElementError\nE           exception.exceptions.NotFoundElementError\n\nbase/actions.py:350: NotFoundElementError"
+  },
+  "description" : {
+    "value" : "\n        login email 登陆验证\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "64ffd1142170fd54",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "no_element_login.png",
+    "source" : "d7103bad-56eb-4c58-8bbc-cf702b233747-attachment.png",
+    "type" : "image/png",
+    "size" : 868834,
+    "uid" : "7a24dddc8ca286ea"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "login_email"
+  }, {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "1654-MainThread"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

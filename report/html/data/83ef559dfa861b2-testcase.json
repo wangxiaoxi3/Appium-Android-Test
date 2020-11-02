@@ -1,0 +1,80 @@
+{
+  "uid" : "83ef559dfa861b2",
+  "name" : "test_login.TestLogin.test_fb_login",
+  "title" : "Test fb login",
+  "time" : {
+    "start" : 1544149156770,
+    "stop" : 1544149628431,
+    "duration" : 471661
+  },
+  "summary" : {
+    "attachments" : 3,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "NotFoundElementError: ",
+    "stackTrace" : "self = <base.actions.ElementActions object at 0x10e9918d0>\nlocator = {'name': 'nav_drawer', 'type': 'xpath', 'value': '//android.widget.ImageButton[@content-desc=\"Open navigation drawer\"]'}\nis_need_displayed = True\n\n    def _find_element(self, locator, is_need_displayed=True):\n        \"\"\"查找单个元素,如果有多个返回第一个\n    \n        Args:\n            locator: 定位器\n            is_need_displayed: 是否需要定位的元素必须展示\n    \n        Returns: 元素\n    \n        Raises: NotFoundElementError\n                未找到元素会抛 NotFoundElementError 异常\n    \n        \"\"\"\n        if 'timeOutInSeconds' in locator:\n            wait = locator['timeOutInSeconds']\n        else:\n            wait = 20\n    \n        try:\n            if is_need_displayed:\n                WebDriverWait(self.driver, wait).until(\n>                   lambda driver: self._get_element_by_type(driver, locator).is_displayed())\n\nbase/actions.py:339: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"c2fe002d-c753-4f6a-bbc2-becfca58cb94\")>\nmethod = <function ElementActions._find_element.<locals>.<lambda> at 0x10e9a1d90>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/selenium/webdriver/support/wait.py:80: TimeoutException\n\nDuring handling of the above exception, another exception occurred:\n\nself = <test.test_login.TestLogin object at 0x10f2047b8>\naction = <base.actions.ElementActions object at 0x10e9918d0>\n\n    @pytest.allure.feature('Login')\n    @allure.story('facebook')\n    @allure.severity('blocker')\n    @pytest.mark.flaky(reruns=2, reruns_delay=5)\n    def test_fb_login(self, action: ElementActions):\n        \"\"\"\n        facebook登陆验证\n    \n        \"\"\"\n        L.d('test_fb_login')\n        # 选择\n        action.click(MainPage.select_all)\n        # action.click(MainPage.continue_bn)\n        # action.sleep(2)\n        # if action.is_text_displayed(u'允许') is True:\n        #     action.alert()\n        # else:\n        #     pass\n        # 关闭广告\n        action.sleep(2)\n        action.back_press()\n        action.sleep(2)\n        action.click(MainPage.nav_drawer)\n        action.click(MainPage.login)\n    \n        action.click(LoginPage.fb)\n        action.sleep(10)\n>       action.click(MainPage.nav_drawer)\n\ntest/test_login.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase/actions.py:98: in click\n    el = self._find_element(locator)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <base.actions.ElementActions object at 0x10e9918d0>\nlocator = {'name': 'nav_drawer', 'type': 'xpath', 'value': '//android.widget.ImageButton[@content-desc=\"Open navigation drawer\"]'}\nis_need_displayed = True\n\n    def _find_element(self, locator, is_need_displayed=True):\n        \"\"\"查找单个元素,如果有多个返回第一个\n    \n        Args:\n            locator: 定位器\n            is_need_displayed: 是否需要定位的元素必须展示\n    \n        Returns: 元素\n    \n        Raises: NotFoundElementError\n                未找到元素会抛 NotFoundElementError 异常\n    \n        \"\"\"\n        if 'timeOutInSeconds' in locator:\n            wait = locator['timeOutInSeconds']\n        else:\n            wait = 20\n    \n        try:\n            if is_need_displayed:\n                WebDriverWait(self.driver, wait).until(\n                    lambda driver: self._get_element_by_type(driver, locator).is_displayed())\n            else:\n                WebDriverWait(self.driver, wait).until(\n                    lambda driver: self._get_element_by_type(driver, locator) is not None)\n            return self._get_element_by_type(self.driver, locator)\n        except Exception as e:\n            L.e(\"[element] 页面中未能找到 %s 元素\" % locator)\n            filename = locator['name']\n            self.screenshot('no_element_%s' % filename)\n            file = tools.Find.find_screen('no_element_%s' % filename)\n            allure.attach('no_element_%s.png' % filename, file, allure.attach_type.PNG)\n>           raise NotFoundElementError\nE           exception.exceptions.NotFoundElementError\n\nbase/actions.py:350: NotFoundElementError"
+  },
+  "description" : {
+    "value" : "\n        facebook登陆验证\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "64ffd1142170fd54",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "no_element_nav_drawer.png",
+    "source" : "6fb3b9a8-0560-4401-b2f4-a7407d6e3a36-attachment.png",
+    "type" : "image/png",
+    "size" : 65765,
+    "uid" : "5ed90737cf9cd816"
+  }, {
+    "title" : "no_element_login.png",
+    "source" : "135d658f-b426-4d85-ae92-bfe28118f8cf-attachment.png",
+    "type" : "image/png",
+    "size" : 864314,
+    "uid" : "f1c13ec43bf91e7f"
+  }, {
+    "title" : "no_element_nav_drawer.png",
+    "source" : "6d4680c1-2be1-472a-a137-8db514bca6b3-attachment.png",
+    "type" : "image/png",
+    "size" : 66578,
+    "uid" : "4d66fd092b12f373"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "1654-MainThread"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "story",
+    "value" : "facebook"
+  } ],
+  "parameters" : [ ]
+}

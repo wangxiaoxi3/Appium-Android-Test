@@ -1,0 +1,29 @@
+---
+RecordPage:
+  dec: 录制页
+  locators:
+    -
+      name: record
+      type: id
+      value: com.papayamobile.fm.pre:id/record_record_image_view
+
+    -
+      name: upload
+      type: id
+      value: com.papayamobile.fm.pre:id/record_arrow_image_view
+
+    -
+      name: play
+      type: id
+      value: com.papayamobile.fm.pre:id/record_play_image_view
+
+    -
+      name: time
+      type: id
+      value: com.papayamobile.fm.pre:id/record_time_text_view
+
+    -
+      name: title
+      type: name
+      value: Record
+

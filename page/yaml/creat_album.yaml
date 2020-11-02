@@ -1,0 +1,58 @@
+---
+CreateAlbumPage:
+  dec: create_album页面
+  locators:
+    -
+      name: create_album_cover
+      type: id
+      value: com.papayamobile.fm.pre:id/textView_cover
+
+    -
+      name: create_album_title
+      type: id
+      value: com.papayamobile.fm.pre:id/edit_text_create_album_title
+
+    -
+      name: create_author
+      type: id
+      value: com.papayamobile.fm.pre:id/edit_text_create_album_author
+
+    -
+      name: create_description
+      type: id
+      value: com.papayamobile.fm.pre:id/edit_text_create_description
+
+    -
+      name: create_album_add
+      type: id
+      value: com.papayamobile.fm.pre:id/action_create
+
+    -
+      name: take_photo
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_take_photo
+
+    -
+      name: choose_from_album
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_choose_from_album
+
+    -
+      name: picture
+      type: id
+      value: com.papayamobile.fm.pre:id/iv_picture
+
+    -
+      name: menu_crop
+      type: id
+      value: com.papayamobile.fm.pre:id/menu_crop
+
+    -
+      name: genre
+      type: id
+      value: com.papayamobile.fm.pre:id/linear_layout_select_genre
+
+    -
+      name: genre_choose
+      type: id
+      value: com.papayamobile.fm.pre:id/container

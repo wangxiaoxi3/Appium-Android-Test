@@ -1,0 +1,62 @@
+{
+  "uid" : "e976238ad87f5fb4",
+  "name" : "test_profile.TestProfile.test_avatar_to_profile_page",
+  "title" : "Test avatar to profile page",
+  "time" : {
+    "start" : 1544152201806,
+    "stop" : 1544152201809,
+    "duration" : 3
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'My stdio1').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n        验证profile页面\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "9e5ac5cf5508ef56",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "3548-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "story",
+    "value" : "profile"
+  } ],
+  "parameters" : [ ]
+}

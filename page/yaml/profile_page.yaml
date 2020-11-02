@@ -1,0 +1,8 @@
+---
+ProfilePage:
+  dec: 用户页面
+  locators:
+    -
+      name: user_name
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_author_name

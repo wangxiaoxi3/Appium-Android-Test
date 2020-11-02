@@ -1,0 +1,62 @@
+{
+  "uid" : "8501a0555508b03e",
+  "name" : "test_discover.TestDiscover.test_discover_not_null",
+  "title" : "Test discover not null",
+  "time" : {
+    "start" : 1544103150800,
+    "stop" : 1544103162055,
+    "duration" : 11255
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "ConnectionResetError: [Errno 54] Connection reset by peer",
+    "stackTrace" : "@pytest.fixture()\n    def action():\n        env = Environment().get_environment_info()\n    \n        allure.environment(app=env.apk)\n        allure.environment(app_activity=env.app_activity)\n        allure.environment(device_name=env.devices[0].device_name)\n        allure.environment(platform_name=env.devices[0].platform_name)\n        allure.environment(platform_version=env.devices[0].platform_version)\n    \n        capabilities = {'platformName': env.devices[0].platform_name,\n                        'platformVersion': env.devices[0].platform_version,\n                        'deviceName': env.devices[0].device_name,\n                        'app': env.apk,\n                        'clearSystemFiles': True,\n                        'appActivity': env.app_activity,\n                        'appPackage': env.app_package,\n                        'automationName': 'UIAutomator2',\n                        'newCommandTimeout': \"2000\",\n                        'unicodeKeyboard': True,\n                        'resetKeyboard': True,\n                        'noSign': True,\n                        'autoGrantPermissions': True\n                        }\n        host = \"http://localhost:4724/wd/hub\"\n>       driver = webdriver.Remote(host, capabilities)\n\ntest/conftest.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/appium/webdriver/webdriver.py:36: in __init__\n    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py:90: in __init__\n    self.start_session(desired_capabilities, browser_profile)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py:177: in start_session\n    response = self.execute(Command.NEW_SESSION, capabilities)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py:234: in execute\n    response = self.command_executor.execute(driver_command, params)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/selenium/webdriver/remote/remote_connection.py:401: in execute\n    return self._request(command_info[0], url, body=data)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/selenium/webdriver/remote/remote_connection.py:471: in _request\n    resp = opener.open(request, timeout=self._timeout)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/urllib/request.py:465: in open\n    response = self._open(req, data)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/urllib/request.py:483: in _open\n    '_open', req)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/urllib/request.py:443: in _call_chain\n    result = func(*args)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/urllib/request.py:1268: in http_open\n    return self.do_open(http.client.HTTPConnection, req)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/urllib/request.py:1243: in do_open\n    r = h.getresponse()\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py:1174: in getresponse\n    response.begin()\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py:282: in begin\n    version, status, reason = self._read_status()\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py:243: in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <socket.SocketIO object at 0x10e9d8ef0>, b = <memory at 0x10e4bbe88>\n\n    def readinto(self, b):\n        \"\"\"Read up to len(b) bytes into the writable buffer *b* and return\n        the number of bytes read.  If the socket is non-blocking and no bytes\n        are available, None is returned.\n    \n        If *b* is non-empty, a 0 return value indicates that the connection\n        was shutdown at the other end.\n        \"\"\"\n        self._checkClosed()\n        self._checkReadable()\n        if self._timeout_occurred:\n            raise OSError(\"cannot read from timed out object\")\n        while True:\n            try:\n>               return self._sock.recv_into(b)\nE               ConnectionResetError: [Errno 54] Connection reset by peer\n\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py:571: ConnectionResetError"
+  },
+  "description" : {
+    "value" : "\n        验证weekly_selections不为空\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "BROKEN",
+  "testId" : null,
+  "suite" : {
+    "uid" : "4b6c537031ca8fd4",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "discover"
+  }, {
+    "name" : "thread",
+    "value" : "99472-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

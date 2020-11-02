@@ -1,0 +1,58 @@
+---
+UploadPage:
+  dec: 发布页
+  locators:
+    -
+      name: save
+      type: id
+      value: com.papayamobile.fm.pre:id/action_save_draft
+
+    -
+      name: post
+      type: name
+      value: Save a copy and post
+
+    -
+      name: upload
+      type: id
+      value: com.papayamobile.fm.pre:id/action_upload
+
+    -
+      name: play
+      type: id
+      value: com.papayamobile.fm.pre:id/image_view_play_pause
+
+    -
+      name: time
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_audio_length
+
+    -
+      name: select_album
+      type: id
+      value: com.papayamobile.fm.pre:id/image_view_select_album_cover
+
+    -
+      name: text_episode
+      type: id
+      value: com.papayamobile.fm.pre:id/edit_text_episode_name
+
+    -
+      name: text_view
+      type: id
+      value: com.papayamobile.fm.pre:id/edit_text_view_message
+
+    -
+      name: create_album
+      type: id
+      value: com.papayamobile.fm.pre:id/image_view_create_album
+
+    -
+      name: later
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_later
+
+    -
+      name: Dancer
+      type: name
+      value: Dancer

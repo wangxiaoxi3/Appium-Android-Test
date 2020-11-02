@@ -1,0 +1,13 @@
+!EnvironmentInfo
+apk: /appium-fm/apk/Papaya_pre.apk
+app_activity: com.papaya.activities.SplashActivity
+app_package: com.papaya.pre
+appium: 1.8.1
+devices:
+- !DeviceInfo
+  device_name: 192.168.56.101:5555
+  platform_name: Android
+  platform_version: '6.0'
+html_report: /appium-fm/report/html
+pages_yaml: /appium-fm/page/yaml
+xml_report: /appium-fm/report/xml

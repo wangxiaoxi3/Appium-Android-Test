@@ -1,0 +1,13 @@
+---
+RecentsPage:
+  dec: recents
+  locators:
+    -
+      name: episode_name
+      type: id
+      value: com.papayamobile.fm:id/text_view_chapter_name
+
+    -
+      name: album_name
+      type: id
+      value: com.papayamobile.fm:id/text_view_album_name

@@ -1,0 +1,204 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1545056831043" stop="1545056831079">
+  <name>test</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1545056831043" status="canceled" stop="1545056831045">
+      <description>
+        验证weekly_selections不为空
+
+        </description>
+      <name>test_discover.TestDiscover.test_discover_not_null</name>
+      <failure>
+        <message>Skipped: Not suitable with selected labels: ('feature', 'My stdio1').</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="story" value="discover"/>
+        <label name="feature" value="Home"/>
+        <label name="thread" value="6847-MainThread"/>
+        <label name="host" value="192.168.0.107"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545056831048" status="canceled" stop="1545056831050">
+      <description>
+        验证weekly_selections内专辑可播放
+
+        </description>
+      <name>test_discover.TestDiscover.test_play_discover_album</name>
+      <failure>
+        <message>Skipped: Not suitable with selected labels: ('feature', 'My stdio1').</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="story" value="discover"/>
+        <label name="feature" value="Home"/>
+        <label name="thread" value="6847-MainThread"/>
+        <label name="host" value="192.168.0.107"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545056831052" status="canceled" stop="1545056831054">
+      <description>
+        验证genres内专辑可播放
+
+        </description>
+      <name>test_discover.TestDiscover.test_play_genres_album</name>
+      <failure>
+        <message>Skipped: Not suitable with selected labels: ('feature', 'My stdio1').</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="story" value="genres"/>
+        <label name="feature" value="Home1"/>
+        <label name="thread" value="6847-MainThread"/>
+        <label name="host" value="192.168.0.107"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545056831056" status="canceled" stop="1545056831058">
+      <description>
+        验证profile页面
+
+        </description>
+      <name>test_profile.TestProfile.test_avatar_to_profile_page</name>
+      <failure>
+        <message>Skipped: Not suitable with selected labels: ('feature', 'My stdio1').</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="story" value="profile"/>
+        <label name="feature" value="Home"/>
+        <label name="thread" value="6847-MainThread"/>
+        <label name="host" value="192.168.0.107"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545056831059" status="canceled" stop="1545056831061">
+      <description>
+        facebook登陆验证
+
+        </description>
+      <name>test_login.TestLogin.test_fb_login</name>
+      <failure>
+        <message>Skipped: Not suitable with selected labels: ('feature', 'My stdio1').</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="facebook"/>
+        <label name="feature" value="Login"/>
+        <label name="thread" value="6847-MainThread"/>
+        <label name="host" value="192.168.0.107"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545056831066" status="canceled" stop="1545056831069">
+      <description>
+        Google登陆验证
+
+        </description>
+      <name>test_login.TestLogin.test_google_login</name>
+      <failure>
+        <message>Skipped: Not suitable with selected labels: ('feature', 'My stdio1').</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="google"/>
+        <label name="feature" value="Login"/>
+        <label name="thread" value="6847-MainThread"/>
+        <label name="host" value="192.168.0.107"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545056831072" status="canceled" stop="1545056831075">
+      <description>
+        twitter登陆验证
+
+        </description>
+      <name>test_login.TestLogin.test_twitter_login</name>
+      <failure>
+        <message>Skipped: Not suitable with selected labels: ('feature', 'My stdio1').</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="twitter"/>
+        <label name="feature" value="Login"/>
+        <label name="thread" value="6847-MainThread"/>
+        <label name="host" value="192.168.0.107"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545056831076" status="canceled" stop="1545056831077">
+      <description>
+        login email 登陆验证
+
+        </description>
+      <name>test_login.TestLogin.test_login_email</name>
+      <failure>
+        <message>Skipped: Not suitable with selected labels: ('feature', 'My stdio1').</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="login_email"/>
+        <label name="feature" value="Login"/>
+        <label name="thread" value="6847-MainThread"/>
+        <label name="host" value="192.168.0.107"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545056831078" status="canceled" stop="1545056831079">
+      <description>
+        login later 登陆验证
+
+        </description>
+      <name>test_login.TestLogin.test_login_later</name>
+      <failure>
+        <message>Skipped: Not suitable with selected labels: ('feature', 'My stdio1').</message>
+        <stack-trace></stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="story" value="login_later"/>
+        <label name="feature" value="Login"/>
+        <label name="thread" value="6847-MainThread"/>
+        <label name="host" value="192.168.0.107"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

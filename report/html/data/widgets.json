@@ -1,0 +1,80 @@
+{
+  "hash" : "9ae4a52f46fbba0c959575303f697deb73e72d63",
+  "data" : [ {
+    "statistic" : {
+      "total" : 9,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 9,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "time" : {
+      "start" : 1545056831043,
+      "stop" : 1545056831079,
+      "duration" : 36
+    },
+    "name" : "total",
+    "type" : "TOTAL"
+  }, {
+    "name" : "defects",
+    "type" : "DEFECTS",
+    "data" : [ {
+      "count" : 0,
+      "message" : "There are no defects!",
+      "status" : "PASSED"
+    } ]
+  }, {
+    "name" : "xunit",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "Test",
+      "statistic" : {
+        "total" : 9,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 9,
+        "failed" : 0,
+        "broken" : 0
+      }
+    } ]
+  }, {
+    "name" : "behaviors",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "Home",
+      "statistic" : {
+        "total" : 3,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 3,
+        "failed" : 0,
+        "broken" : 0
+      }
+    }, {
+      "title" : "Home1",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 1,
+        "failed" : 0,
+        "broken" : 0
+      }
+    }, {
+      "title" : "Login",
+      "statistic" : {
+        "total" : 5,
+        "passed" : 0,
+        "pending" : 0,
+        "canceled" : 5,
+        "failed" : 0,
+        "broken" : 0
+      }
+    } ]
+  }, {
+    "name" : "environment",
+    "type" : "KEY_VALUE",
+    "data" : [ ]
+  } ]
+}

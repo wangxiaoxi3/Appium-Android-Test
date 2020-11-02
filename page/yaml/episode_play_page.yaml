@@ -1,0 +1,32 @@
+---
+EpisodePlayPage:
+  dec: 专辑播放页
+  locators:
+    -
+      name: chapter_name
+      type: id
+      value: com.papayamobile.fm.pre:id/tv_chapter_name
+    -
+      name: album_name
+      type: id
+      value: com.papayamobile.fm.pre:id/tv_album_name
+
+    -
+      name: play_time
+      type: id
+      value: com.papayamobile.fm.pre:id/exo_position
+
+    -
+      name: total_time
+      type: id
+      value: com.papayamobile.fm.pre:id/exo_duration
+
+    -
+      name: play_iv
+      type: id
+      value: com.papayamobile.fm.pre:id/exo_pause
+
+    -
+      name: play_next
+      type: id
+      value: com.papayamobile.fm.pre:id/exo_next

@@ -1,0 +1,125 @@
+{
+  "uid" : "5346ec6c349361a6",
+  "name" : "test_discover.TestDiscover.test_play_discover_album",
+  "title" : "Test play discover album",
+  "time" : {
+    "start" : 1544074983363,
+    "stop" : 1544075237662,
+    "duration" : 254299
+  },
+  "summary" : {
+    "attachments" : 3,
+    "steps" : 3
+  },
+  "failure" : {
+    "message" : "TypeError: find_element_by_id() missing 1 required positional argument: 'id_'",
+    "stackTrace" : "self = <test.test_discover.TestDiscover object at 0x10e9a52b0>\naction = <base.actions.ElementActions object at 0x10e97cb38>\n\n    @pytest.allure.feature('Home')\n    @allure.story('discover')\n    @allure.severity('normal')\n    @pytest.mark.flaky(reruns=2, reruns_delay=5)\n    def test_play_discover_album(self, action: ElementActions):\n        \"\"\"\n        验证weekly_selections内专辑可播放\n    \n        \"\"\"\n        L.d('test_play_discover_album')\n        # 关闭广告\n        login_later(action)\n        # 进入专辑页面\n        action.sleep(2)\n        before_album_name = action.get_text(MainPage.discover_album_name)\n        action.click(MainPage.discover_album_name)\n        action.sleep(2)\n        try:\n            after_album_name = action.get_text(AlbumDetailsPage.album_name)\n            # 验证专辑名称\n            assert after_album_name == before_album_name\n    \n        except AssertionError:\n            action.screenshot(\"play_discover_album_error\")\n            file = tools.Find.find_screen(\"play_discover_album_error\")\n            allure.attach('play_discover_album_error.png', file, allure.attach_type.PNG)\n            action.quit()\n    \n        if action.is_element_true(AlbumDetailsPage.chapter_name) is False:\n            before_chapter_name = action.get_text(AlbumDetailsPage.chapter_name)\n            # 点击章节进入播放页面\n            action.click(AlbumDetailsPage.chapter_name)\n    \n        else:\n            action.swip_up(1)\n            before_chapter_name = action.get_text(AlbumDetailsPage.chapter_name)\n    \n            action.click(AlbumDetailsPage.chapter_name)\n        action.sleep(5)\n        after_chapter_name = action.get_text(EpisodePlayPage.chapter_name)\n        action.sleep(5)\n    \n        try:\n            # 验证章节名称\n>           assert before_chapter_name == after_chapter_name\nE           AssertionError: assert 'Spring' == None\n\ntest/test_discover.py:86: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <test.test_discover.TestDiscover object at 0x10e9a52b0>\naction = <base.actions.ElementActions object at 0x10e97cb38>\n\n    @pytest.allure.feature('Home')\n    @allure.story('discover')\n    @allure.severity('normal')\n    @pytest.mark.flaky(reruns=2, reruns_delay=5)\n    def test_play_discover_album(self, action: ElementActions):\n        \"\"\"\n        验证weekly_selections内专辑可播放\n    \n        \"\"\"\n        L.d('test_play_discover_album')\n        # 关闭广告\n        login_later(action)\n        # 进入专辑页面\n        action.sleep(2)\n        before_album_name = action.get_text(MainPage.discover_album_name)\n        action.click(MainPage.discover_album_name)\n        action.sleep(2)\n        try:\n            after_album_name = action.get_text(AlbumDetailsPage.album_name)\n            # 验证专辑名称\n            assert after_album_name == before_album_name\n    \n        except AssertionError:\n            action.screenshot(\"play_discover_album_error\")\n            file = tools.Find.find_screen(\"play_discover_album_error\")\n            allure.attach('play_discover_album_error.png', file, allure.attach_type.PNG)\n            action.quit()\n    \n        if action.is_element_true(AlbumDetailsPage.chapter_name) is False:\n            before_chapter_name = action.get_text(AlbumDetailsPage.chapter_name)\n            # 点击章节进入播放页面\n            action.click(AlbumDetailsPage.chapter_name)\n    \n        else:\n            action.swip_up(1)\n            before_chapter_name = action.get_text(AlbumDetailsPage.chapter_name)\n    \n            action.click(AlbumDetailsPage.chapter_name)\n        action.sleep(5)\n        after_chapter_name = action.get_text(EpisodePlayPage.chapter_name)\n        action.sleep(5)\n    \n        try:\n            # 验证章节名称\n            assert before_chapter_name == after_chapter_name\n        except AssertionError:\n            action.screenshot(\"selections_chapter_name_error\")\n            file = tools.Find.find_screen(\"selections_chapter_name_error\")\n            allure.attach('selections_chapter_name_error.png', file, allure.attach_type.PNG)\n>           action.quit()\n\ntest/test_discover.py:91: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <base.actions.ElementActions object at 0x10e97cb38>\n\n    def quit(self):\n>       self.driver.find_element_by_id().get_attribute()\nE       TypeError: find_element_by_id() missing 1 required positional argument: 'id_'\n\nbase/actions.py:52: TypeError"
+  },
+  "description" : {
+    "value" : "\n        验证weekly_selections内专辑可播放\n\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "7c25c4ceff41c064",
+    "name" : "test",
+    "title" : "Test"
+  },
+  "steps" : [ {
+    "name" : "不登录",
+    "title" : "不登录",
+    "time" : {
+      "start" : 1544075004339,
+      "stop" : 1544075022905,
+      "duration" : 18566
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "不登录",
+    "title" : "不登录",
+    "time" : {
+      "start" : 1544075090351,
+      "stop" : 1544075108707,
+      "duration" : 18356
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "不登录",
+    "title" : "不登录",
+    "time" : {
+      "start" : 1544075176776,
+      "stop" : 1544075195176,
+      "duration" : 18400
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "selections_chapter_name_error.png",
+    "source" : "7ced4ec6-3d18-4dd7-9087-f412ca6b946c-attachment.png",
+    "type" : "image/png",
+    "size" : 135224,
+    "uid" : "1814856e91061444"
+  }, {
+    "title" : "selections_chapter_name_error.png",
+    "source" : "ce3673b4-287e-4ae2-b484-3af7b837e78a-attachment.png",
+    "type" : "image/png",
+    "size" : 122960,
+    "uid" : "6306e971e558a83"
+  }, {
+    "title" : "selections_chapter_name_error.png",
+    "source" : "c37579b2-60fc-45d7-a2f1-d217093a095b-attachment.png",
+    "type" : "image/png",
+    "size" : 123316,
+    "uid" : "442c956917d0c673"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "discover"
+  }, {
+    "name" : "suite-name",
+    "value" : "test"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "thread",
+    "value" : "94359-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

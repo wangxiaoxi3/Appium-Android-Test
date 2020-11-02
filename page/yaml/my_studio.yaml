@@ -1,0 +1,43 @@
+---
+MystdioPage:
+  dec: my stdio页面
+  locators:
+    -
+      name: album_name
+      type: name
+      value: Dancer
+
+    -
+      name: create_album
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_create_album
+
+    -
+      name: Draft
+      type: name
+      value: Draft
+
+    -
+      name: create_album_add
+      type: id
+      value: com.papayamobile.fm.pre:id/my_studio_add
+
+    -
+      name: edit
+      type: id
+      value: com.papayamobile.fm.pre:id/image_view_edit_delete_album
+
+    -
+      name: delete
+      type: id
+      value: com.papayamobile.fm.pre:id/linear_layout_my_album_delete
+
+    -
+      name: delete_ok
+      type: id
+      value: android:id/button1
+
+    -
+      name: sort
+      type: id
+      value: com.papayamobile.fm.pre:id/image_view_sort_episode

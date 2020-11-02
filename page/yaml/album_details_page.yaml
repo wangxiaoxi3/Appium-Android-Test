@@ -1,0 +1,23 @@
+---
+AlbumDetailsPage:
+  dec: 专辑详情页
+  locators:
+    -
+      name: album_name
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_album_name
+
+    -
+      name: chapter_name
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_chapter_name
+
+    -
+      name: popular_user_name
+      type: id
+      value: com.papayamobile.fm.pre:id/text_view_reader_name
+
+    -
+      name: popular_user_view
+      type: id
+      value: com.papayamobile.fm.pre:id/image_view_profile_pic
